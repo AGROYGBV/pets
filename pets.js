@@ -1,12 +1,18 @@
 class Pets {
-    constructor(name, species, color) {
+    constructor(name, color, species) {
         this.name = name;
-        this.species = species;
         this.color = color;
+        this.species = species;
     }
+
     changeName(name) {
         this.name = name;
     }
 }
 
-module.exports = Pets
+p1 = new Pets("Celine", "black", "cat");
+p2 = new Pets("Olivia", "white with some spots", "cat");
+console.log(p1);
+console.log(p2);
+
+module.exports = Pets;
